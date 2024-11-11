@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patas Radicais | Gatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-pag" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-pag" href="saude.html">Saúde</a></li>
+                    <li><a class="secao-pag" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-pag" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+    
+    <div class="espaco-inicial"></div>
+
+    <!--Titulo-->
+        <div class="cabeca-secao">
+            <h2 class="titulo-pag">Gatos</h2>
+            <p>Tuuuudo para o seu <b>gatinho</b>!</p>
+        </div>
+
+    <!--Alimentação-->
+        <section>
+            <header>
+                <h2 class="titulo">Alimentação</h2>
+            </header>
+            
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-adulto.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Gatos Adultos Castrados</h3>
+                    </header>
+                    
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Sabor inigualável</li>
+                            <li>Trato urinário saudável</li>
+                            <li>Intestino saudável</li>
+                            <li>Redução do odor das fezes</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 159,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-filhote.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Gatos Filhotes</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Ração com textura suave</li>
+                            <li>Fortalece as defesas imunológicas</li>
+                            <li>Promove a segurança digestiva</li>
+                            <li>Formação das defesas naturais</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 465,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-senior.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Gatos Sênior Castrados</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Altamente palatável</li>
+                            <li>Mantém a saúde do trato urinário</li>
+                            <li>Auxilia na manutenção de peso</li>
+                            <li>Crocante e saboroso</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 180,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-umida.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Úmida de Frango para Gatos Adultos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Suculentos pedacinhos cozidos</li>
+                            <li>Proteína, vitaminas e sais minerais</li>
+                            <li>Trato urinário saudável</li>
+                            <li>Ingredientes naturais</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 3,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-petisco.jpg">
+                    <header>
+                        <h3 class="prod-nome">Petisco de Carne para Gatos Adultos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Petisco para toda hora</li>
+                            <li>Funcionais e saborosos</li>
+                            <li>Delicioso sabor de carne tentadora</li>
+                            <li>Rende mais de 20 dias</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 7,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-petisco-cremoso.jpg">
+                    <header>
+                        <h3 class="prod-nome">Petisco Cremoso de Frango para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Sabor irresistível de frango</li>
+                            <li>Ingredientes 100% naturais</li>
+                            <li>Enriquecido com vitaminas</li>
+                            <li>Garantia de satisfação</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 24,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim alimentação-->
+
+    <!--Saude-->
+        <section>
+            <header>
+                <h2 class="titulo">Saúde</h2>
+            </header>
+
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/saude/gato/saude-g-antinflamatorio.jpg">
+                    <header>
+                        <h3 class="prod-nome">Antinflamatório para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Possui propriedades anti-inflamatórias, antipirética e analgésica</li>
+                            <li>Palatável e de fácil administração</li>
+                            <li>Pode ser utilizado em cães e gatos filhotes, a partir de 2 meses de idade</li>
+                            <li>Disponível em embalagem com 15 ml</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 83,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/saude/gato/saude-g-antipulgas.jpg">
+                    <header>
+                        <h3 class="prod-nome">Antipulgas para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Para Gatos de 0,9 a 2,0kg</li>
+                            <li>Comprimido mastigável, pequeno e saboroso</li>
+                            <li>1 Comprimido protege por 1 mês inteiro</li>
+                            <li>Disponível em embalagem de 12 mg</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 75,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/saude/gato/saude-g-colirio.jpg">
+                    <header>
+                        <h3 class="prod-nome">Colírio Soft para Gatos </h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Lágrima artificial elástica estéril</li>
+                            <li>Conforto imediato e alívio prolongado</li>
+                            <li>Favorece a recuperação ocular de animais com comprometimento da produção lacrimal</li>
+                            <li>Disponível em embalagem com 10 ml</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 92,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/saude/gato/saude-g-rins.jpg">
+                    <header>
+                        <h3 class="prod-nome">Pró-Rim Pet para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Previne e trata doenças renais</li>
+                            <li>Pode ser usado em quadros agudos ou crônicos</li>
+                            <li>Eficaz no tratamento de nefrites e nefroses</li>
+                            <li>Disponível em embalagem de 30 ml</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 127,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/saude/gato/saude-g-suplemento.jpg">
+                    <header>
+                        <h3 class="prod-nome">Suplemento para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Auxilia na redução da inflamação e degradação articular</li>
+                            <li>Vitaminas C e E</li>
+                            <li>Controla rigidez, inchaço e dificuldade de locomoção</li>
+                            <li>Disponível em embalagem com 30 comprimidos</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 207,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/saude/gato/saude-g-xarope.jpg">
+                    <header>
+                        <h3 class="prod-nome">Xarope para Gatos </h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Derivado sintético da cisteína com mecanismo mucolítico único</li>
+                            <li>Diminui viscosidade das secreções, facilitando a eliminação</li>
+                            <li>Avanço no tratamento respiratório</li>
+                            <li>Disponível em embalagem com 50 ml</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 177,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim Saude-->
+    
+    <!--Higiene-->
+            <section>
+                <header>
+                    <h2 class="titulo">Higiene</h2>
+                </header>
+
+                <div class="container-prod">
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/higiene/gato/higiene-g-areia-fina.jpg">
+                        <header>
+                            <h3 class="prod-nome">Areia Higiênica Grãos Finos para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Elimina o odor da urina instantaneamente</li>
+                                <li>Zero poeira</li>
+                                <li>Torrão sólido</li>
+                                <li>Veterinários indicam</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 69,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/higiene/gato/higiene-g-areia-granulado.jpg">
+                        <header>
+                            <h3 class="prod-nome">Areia Higiênica para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Com grãos minerais naturais, não aglomerado</li>
+                                <li>Auto poder de absorção na sujeira</li>
+                                <li>Controle de odor</li>
+                                <li>Areia atóxica, garantindo proteção ao seu felino sensível a alergias</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 27,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/higiene/gato/higiene-g-areia-madeira.jpg">
+                        <header>
+                            <h3 class="prod-nome">Granulado Higiênico de Madeira Premium </h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Totalmente natural, feito sem aditivos químicos, além de ser fácil de descartar</li>
+                                <li>Indicado para pets de todas as idades e de todos os portes</li>
+                                <li>Não machuca e nem suja as patinhas</li>
+                                <li>Produto esterilizado que absorve instantaneamente</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 138,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/higiene/gato/higiene-g-colonia.jpg">
+                        <header>
+                            <h3 class="prod-nome">Colônia Bebê para Cães e Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Indicada para cães e gatos</li>
+                                <li>Fragrância infantil, agradável e suavemente doce</li>
+                                <li>Evita que o pet espirre na hora da aplicação</li>
+                                <li>Disponível em embalagem de 50ml</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 57,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/higiene/gato/higiene-g-lenco.jpg">
+                        <header>
+                            <h3 class="prod-nome">Toalha Umedecida para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Indicada para gatos</li>
+                                <li>Ideal para limpeza das orelhas, patas, pelos e região externa de olhos e focinho</li>
+                                <li>Você pode limpar partes pontuais do seu gato e objetos usados por ele sem preocupações</li>
+                                <li>Disponível em embalagem com 50 unidades</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 23,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/higiene/gato/higiene-g-shampoo.jpg">
+                        <header>
+                            <h3 class="prod-nome">Shampoo e Condicionador para Gatos
+
+    </h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Pelos macios e hidratados</li>
+                                <li>Com óleo de amêndoas</li>
+                                <li>Fórmula neutra e balanceada</li>
+                                <li>pH Neutro</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 19,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        <!--Fim higiene-->
+
+        <!--Lazer-->
+            <section>
+                <header>
+                    <h2 class="titulo">Lazer</h2>
+                </header>
+
+                <div class="container-prod">
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/lazer/gato/lazer-g-arranhador.jpg">
+                        <header>
+                            <h3 class="prod-nome">Poste Arranhador para Gatos </h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Madeira de excelente qualidadel</li>
+                                <li>Encapado com pelúcia</li>
+                                <li>Ideal para distrair, interagir, brincar, arranhar e combater o stress do seu felino</li>
+                                <li>Proporciona o desgaste natural das garras do gato</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 99,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/lazer/gato/lazer-g-gatorama.jpg">
+                        <header>
+                            <h3 class="prod-nome">Gatorama Furacão Pet para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Indicado para gatos</li>
+                                <li>Ótimo para distração e acaba com o estresse do seu pet</li>
+                                <li>Proporciona muita diversão</li>
+                                <li>Disponível em embalagem com 1 caixa, 1 obstáculo e 2 bolinhas</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 44,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/lazer/gato/lazer-g-torre.jpg">
+                        <header>
+                            <h3 class="prod-nome">Brinquedo Torre Bolinhas para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Produto exclusivo para animais domésticos</li>
+                                <li>Proporciona diversão ao seu gato</li>
+                                <li>Possui três bolinhas na parte interna do brinquedo que estimulam o instinto de caça promovendo exercícios para seu gato</li>
+                                <li>Disponível em embalagem com uma unidade</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 107,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/lazer/gato/lazer-g-plumas.jpg">
+                        <header>
+                            <h3 class="prod-nome">Brinquedo Plumas e Penas para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Alivia o estresse do pet</li>
+                                <li>Estimula o exercício físico</li>
+                                <li>Diminui o nível de ociosidade</li>
+                                <li>Disponível em embalagem com 1 unidade</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 18,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/lazer/gato/lazer-g-laser.jpg">
+                        <header>
+                            <h3 class="prod-nome">Brinquedo Laser para Gatos </h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Estimula, desestressa e entretém seu pet</li>
+                                <li>Desenvolve seu instinto natural de caça</li>
+                                <li>Interage com o dono no momento da brincadeira</li>
+                                <li>Disponível em embalagem com uma unidade</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 28,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/lazer/gato/lazer-g-ratos.jpg">
+                        <header>
+                            <h3 class="prod-nome">Brinquedo Ratinhos para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Provoque seu gatinho para brincar com estes ratinhos que são pura diversão</li>
+                                <li>Feitos de tecido de algodão</li>
+                                <li>São ideais para seu melhor amigo que precisa diariamente de uma boa dose de entretenimento</li>
+                                <li>Embalagem em 1 unidade</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 18,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        <!--Fim lazer-->
+    <!--Cadastro recebe-email-->
+    <section class="cad-oferta">
+        <header>
+            <h2>Não perca as melhores ofertas para o seu Pet!</h2>
+            <p>Cadastre-se e fique por dentro de ofertas imperdíveis para o seu bichinho.</p>
+        </header>
+        <article>
+            <form>
+                <div class="bloco-cad">
+                    <p>Email:</p>
+                    <input type="text" placeholder="paidepet@email.com" required>
+                </div>
+
+                <div class="bloco-cad">
+                    <p>Qual o seu Pet?</p>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gachorro">Gato e Cachorro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
+
+    <div class="espaco-final"></div>
+    <!--Fim cadastro recebe-email-->
+
+    <!--Rodapé-->
+    <footer class="rodape-pag">
+        <div class="rodape-infos">
+            <div class="bloco-infos">
+                <h4>Institucional</h4>
+                <p>Trabalhe Conosco</p>
+                <p>Sobre nós</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Fale Conosco</h4>
+                <p>Central de Atendimento | (21)2000-0000</p>
+                <p>WhatsApp | (21)99999-9999</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Nossas redes:</h4>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+
+</html>

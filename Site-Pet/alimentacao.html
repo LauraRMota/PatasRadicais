@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Radicais | Alimentação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-atual" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-pag" href="saude.html">Saúde</a></li>
+                    <li><a class="secao-pag" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-pag" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+    
+    <div class="espaco-inicial"></div>
+
+    <!--Alimentação-->
+        <div class="cabeca-secao">
+            <h2 class="titulo-pag">Alimentação</h2>
+            <p>A comida que o seu <b>pet</b> adora, a qualidade que ele merece!</p>
+        </div>
+
+    <!--Alimente Gato-->
+        <section>
+            <header>
+                <h2 class="titulo">Alimente o seu Gatinho</h2>
+            </header>
+            
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-adulto.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Gatos Adultos Castrados</h3>
+                    </header>
+                    
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Sabor inigualável</li>
+                            <li>Trato urinário saudável</li>
+                            <li>Intestino saudável</li>
+                            <li>Redução do odor das fezes</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 159,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-filhote.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Gatos Filhotes</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Ração com textura suave</li>
+                            <li>Fortalece as defesas imunológicas</li>
+                            <li>Promove a segurança digestiva</li>
+                            <li>Formação das defesas naturais</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 465,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-senior.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Gatos Sênior Castrados</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Altamente palatável</li>
+                            <li>Mantém a saúde do trato urinário</li>
+                            <li>Auxilia na manutenção de peso</li>
+                            <li>Crocante e saboroso</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 180,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-umida.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Úmida de Frango para Gatos Adultos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Suculentos pedacinhos cozidos</li>
+                            <li>Proteína, vitaminas e sais minerais</li>
+                            <li>Trato urinário saudável</li>
+                            <li>Ingredientes naturais</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 3,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-petisco.jpg">
+                    <header>
+                        <h3 class="prod-nome">Petisco de Carne para Gatos Adultos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Petisco para toda hora</li>
+                            <li>Funcionais e saborosos</li>
+                            <li>Delicioso sabor de carne tentadora</li>
+                            <li>Rende mais de 20 dias</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 7,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/gato/racao-g-petisco-cremoso.jpg">
+                    <header>
+                        <h3 class="prod-nome">Petisco Cremoso de Frango para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Sabor irresistível de frango</li>
+                            <li>Ingredientes 100% naturais</li>
+                            <li>Enriquecido com vitaminas</li>
+                            <li>Garantia de satisfação</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 24,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim alimente gato-->
+
+    <!--Alimenta Cão-->
+        <section>
+            <h2 class="titulo">Alimente o seu Cãozinho</h2>
+    
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/cao/racao-c-adulto.jpg"">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca Cães Adultos Frango e Carne</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Maior rendimento</li>
+                            <li>Rico em vitaminas e minerais</li>
+                            <li>Máxima satisfação para paladares exigentes</li>
+                            <li>Redução do odor das fezes</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 194,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/cao/racao-c-filhote.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca Cães Filhotes Frango e Arroz</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Saúde oral</li>
+                            <li>Fortalece as defesas imunológicas</li>
+                            <li>Proteção articular</li>
+                            <li>Redução do odor das fezes</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 179,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/cao/racao-c-senior.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Cães Sênior Frango e Arroz</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Manutenção de massa magra</li>
+                            <li>Saúde oral</li>
+                            <li>Proteção articular</li>
+                            <li>Redução do odor das fezes</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 176,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/cao/racao-c-seca-adulto.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Seca para Cães Adultos Raças Pequenas</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Ração natural feita com ingredientes deliciosos</li>
+                            <li>Sem transgênicos, sem corantes e sem conservantes</li>
+                            <li>Saudável e nutritiva</li>
+                            <li>Feita com carne de verdade, sem farinha de vísceras</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 250,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/cao/racao-c-umida.jpg">
+                    <header>
+                        <h3 class="prod-nome">Ração Úmida Sachê Carne para Cães Adultos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Garante bom funcionamento do metabolismo</li>
+                            <li>Pedaços de carne cozidos no vapor</li>
+                            <li>Indicado para cães adultos de todas as raças</li>
+                            <li>Rico em proteínas e vitaminas</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 3,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/alimentacao/cao/racao-c-cookie.jpg">
+                    <header>
+                        <h3 class="prod-nome">Biscoito para Cães Filhotes Porte Médio e Grande Sabor Frango</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Saúde Intestinal</li>
+                            <li>Sem adição de açúcar</li>
+                            <li>Sem ingredientes transgênicos</li>
+                            <li>Sem corantes e aromatizantes artificiais</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 16,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim alimenta cão-->
+    
+    <!-- Fim Alimentação-->
+    
+    <!--Cadastro recebe-email-->
+    <section class="cad-oferta">
+        <header>
+            <h2>Não perca as melhores ofertas para o seu Pet!</h2>
+            <p>Cadastre-se e fique por dentro de ofertas imperdíveis para o seu bichinho.</p>
+        </header>
+        <article>
+            <form>
+                <div class="bloco-cad">
+                    <p>Email:</p>
+                    <input type="text" placeholder="paidepet@email.com" required>
+                </div>
+
+                <div class="bloco-cad">
+                    <p>Qual o seu Pet?</p>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gachorro">Gato e Cachorro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
+
+    <div class="espaco-final"></div>
+    <!--Fim cadastro recebe-email-->
+
+    <!--Rodapé-->
+    <footer class="rodape-pag">
+        <div class="rodape-infos">
+            <div class="bloco-infos">
+                <h4>Institucional</h4>
+                <p>Trabalhe Conosco</p>
+                <p>Sobre nós</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Fale Conosco</h4>
+                <p>Central de Atendimento | (21)2000-0000</p>
+                <p>WhatsApp | (21)99999-9999</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Nossas redes:</h4>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+
+</html>

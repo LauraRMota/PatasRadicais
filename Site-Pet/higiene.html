@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Radicais | Higiene</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-pag" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-pag" href="saude.html">Saúde</a></li>
+                    <li><a class="secao-atual" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-pag" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+
+    <div class="espaco-inicial"></div>
+
+    <!--Higiene-->
+    <div class="cabeca-secao">
+        <h2 class="titulo-pag">Higiene</h2>
+        <p>Tudo para o seu <b>pet</b> ficar limpinho e cheiroso!</p>
+    </div>
+    <!--Higiene Gato-->
+        <section>
+            <header>
+                <h2 class="titulo">Higiene do seu Gatinho</h2>
+            </header>
+
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/gato/higiene-g-areia-fina.jpg">
+                    <header>
+                        <h3 class="prod-nome">Areia Higiênica Grãos Finos para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Elimina o odor da urina instantaneamente</li>
+                            <li>Zero poeira</li>
+                            <li>Torrão sólido</li>
+                            <li>Veterinários indicam</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 69,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/gato/higiene-g-areia-granulado.jpg">
+                    <header>
+                        <h3 class="prod-nome">Areia Higiênica para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Com grãos minerais naturais, não aglomerado</li>
+                            <li>Auto poder de absorção na sujeira</li>
+                            <li>Controle de odor</li>
+                            <li>Areia atóxica, garantindo proteção ao seu felino sensível a alergias</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 27,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/gato/higiene-g-areia-madeira.jpg">
+                    <header>
+                        <h3 class="prod-nome">Granulado Higiênico de Madeira Premium </h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Totalmente natural, feito sem aditivos químicos, além de ser fácil de descartar</li>
+                            <li>Indicado para pets de todas as idades e de todos os portes</li>
+                            <li>Não machuca e nem suja as patinhas</li>
+                            <li>Produto esterilizado que absorve instantaneamente</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 138,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/gato/higiene-g-colonia.jpg">
+                    <header>
+                        <h3 class="prod-nome">Colônia Bebê para Cães e Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Indicada para cães e gatos</li>
+                            <li>Fragrância infantil, agradável e suavemente doce</li>
+                            <li>Evita que o pet espirre na hora da aplicação</li>
+                            <li>Disponível em embalagem de 50ml</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 57,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/gato/higiene-g-lenco.jpg">
+                    <header>
+                        <h3 class="prod-nome">Toalha Umedecida para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Indicada para gatos</li>
+                            <li>Ideal para limpeza das orelhas, patas, pelos e região externa de olhos e focinho</li>
+                            <li>Você pode limpar partes pontuais do seu gato e objetos usados por ele sem preocupações</li>
+                            <li>Disponível em embalagem com 50 unidades</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 23,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/gato/higiene-g-shampoo.jpg">
+                    <header>
+                        <h3 class="prod-nome">Shampoo e Condicionador para Gatos
+
+</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Pelos macios e hidratados</li>
+                            <li>Com óleo de amêndoas</li>
+                            <li>Fórmula neutra e balanceada</li>
+                            <li>pH Neutro</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 19,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim higiene gato-->
+
+    <!--Higiene Cão-->
+        <section class="alimentacao-cao">
+            <h2 class="titulo">Higiene do seu Cãozinho</h2>
+
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/cao/higiene-c-coletor.jpg">
+                    <header>
+                        <h3 class="prod-nome">Porta saquinhos higiênicos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Indicado para cães</li>
+                            <li>Super prático</li>
+                            <li>Projetado com um clipe para prender à guia</li>
+                            <li>Costura reforçada, não vaza</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 9,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/cao/higiene-c-escova.jpg">
+                    <header>
+                        <h3 class="prod-nome">Rasqueadeira para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Remove com facilidade os pelos mortos</li>
+                            <li>Elimina nós da pelagem</li>
+                            <li>A escovação dos pelos ativa o couro do animal estimulando o nascimento de fios novos e mais fortes</li>
+                            <li>Disponível nos tamanhos P e M</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 34,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/cao/higiene-c-limpa-patas.jpg">
+                    <header>
+                        <h3 class="prod-nome">Spray Limpa Patas para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Contêm ativos hidratantes</li>
+                            <li>Seu pet livre de substâncias e micro-organismos</li>
+                            <li>Evita o ressecamento da pele e pelo do pet</li>
+                            <li>Disponível em embalagem de 120 ml</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 18,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/cao/higiene-c-shampoo.jpg">
+                    <header>
+                        <h3 class="prod-nome">Shampoo Antipulgas para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Conta com fórmula suave</li>
+                            <li>Auxilia no combate às infestações de pulgas</li>
+                            <li>Mantém a derme e pelo do pet protegidos</li>
+                            <li>Disponível em embalagens de 500 ml e 5 L</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 25,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/cao/higiene-c-shampoo-filhote.jpg">
+                    <header>
+                        <h3 class="prod-nome">Shampoo para Cães Filhotes</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Contém queratina vegetal, que proporciona maciez e suavidade ao pelo</li>
+                            <li>Conta com restaurador vegetal e pH neutro</li>
+                            <li>Com fragrância de camomila e maracujá</li>
+                            <li>Disponível em embalagens de 500 ml e 5 L</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 19,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/higiene/cao/higiene-c-tapete.jpg">
+                    <header>
+                        <h3 class="prod-nome">Tapete Higiênico para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Possui abas Laterais, além de adesivo no tapete</li>
+                            <li>Contém vedação especial e gel absorvente, resistente a ranhuras</li>
+                            <li>Agora com delicioso cheirinho de frutas cítricas e atrativo canino</li>
+                            <li>Contém 30 unidades</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 96,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim Higiene cão-->
+
+    <!-- Fim Higiene-->
+
+    <!--Cadastro recebe-email-->
+    <section class="cad-oferta">
+        <header>
+            <h2>Não perca as melhores ofertas para o seu Pet!</h2>
+            <p>Cadastre-se e fique por dentro de ofertas imperdíveis para o seu bichinho.</p>
+        </header>
+        <article>
+            <form>
+                <div class="bloco-cad">
+                    <p>Email:</p>
+                    <input type="text" placeholder="paidepet@email.com" required>
+                </div>
+
+                <div class="bloco-cad">
+                    <p>Qual o seu Pet?</p>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gachorro">Gato e Cachorro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
+
+    <div class="espaco-final"></div>
+    <!--Fim cadastro recebe-email-->
+    
+    <!--Rodapé-->
+    <footer class="rodape-pag">
+        <div class="rodape-infos">
+            <div class="bloco-infos">
+                <h4>Institucional</h4>
+                <p>Trabalhe Conosco</p>
+                <p>Sobre nós</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Fale Conosco</h4>
+                <p>Central de Atendimento | (21)2000-0000</p>
+                <p>WhatsApp | (21)99999-9999</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Nossas redes:</h4>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+
+</html>

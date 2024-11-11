@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Radicais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+              
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-pag" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-pag" href="saude.html">Saúde</a></li>
+                    <li><a class="secao-pag" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-pag" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+    
+    <div class="espaco-inicial"></div>
+    
+    <!--Carrossel de ofertas-->
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+        
+        <div class="slide frete">
+            <img src="imagens/frete.jpg" alt="frete-grátis-para-todo-o-brasil">
+        </div>
+
+        <div class="slide postagem">
+            <img src="imagens/postagem.jpg" alt="seu-pet-nas-nossas-redes">
+        </div>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+        </div>
+       
+        </div>
+
+         <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+        </div>
+        
+    </div>
+    <!--Fim carrossel-->
+
+    <!--Categorias-->
+    <section class="prod-pet">
+        <header>
+            <h2>Produtos por Pet</h2>
+        </header>
+      
+        <nav class="pet-imgs">
+            <div class="card card-pet" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                <a href="gatos.html">
+                    <img class="img-pet" src="imagens/cat.jpg" title="Gato"></img>
+                </a>
+            </div>
+            
+            <div class="card card-pet" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                <a href="caes.html">
+                    <img class="img-pet" src="imagens/dog.jpg" title="Cachorro"></img>
+                </a>
+            </div>
+        </nav>
+    </section>
+    <!--Fim categorias-->
+    
+    <!--Novidades-->
+    <section class="secao-nov">
+        <header>
+            <h2 class="titulo">Novidades Felinas</h2>
+        </header>
+    
+            <!--Novidades Felinas-->
+
+        <div class="container-prod">
+            <!--Produto 1-->
+            <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                <img class="prod-img" src="imagens/alimentacao/gato/racao-g-petisco-cremoso.jpg">
+                <header>
+                    <h3 class="prod-nome">Petisco Cremoso de Frango para Gatos</h3>
+                </header>
+
+                <div class="prod-descricao">
+                    <ul type="square">
+                        <li>Sabor irresistível de frango</li>
+                        <li>Ingredientes 100% naturais</li>
+                        <li>Enriquecido com vitaminas</li>
+                        <li>Garantia de satisfação</li>
+                    </ul>
+                </div>
+
+                <p class="prod-preco">R$ 24,99</p>
+
+                <div class="botoes">
+                    <button class="prod-comprar">Comprar</button>
+                    <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                </div>
+            </article>
+
+            <!--Produto 2-->
+            <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                <img class="prod-img" src="imagens/lazer/gato/lazer-g-torre.jpg">
+                <header>
+                    <h3 class="prod-nome">Brinquedo Torre Bolinhas para Gatos</h3>
+                </header>
+
+                <div class="prod-descricao">
+                    <ul type="square">
+                        <li>Produto exclusivo para animais domésticos</li>
+                        <li>Proporciona diversão ao seu gato</li>
+                        <li>Possui três bolinhas na parte interna do brinquedo que estimulam o instinto de caça promovendo exercícios para seu gato</li>
+                        <li>Disponível em embalagem com uma unidade</li>
+                    </ul>
+                </div>
+
+                <p class="prod-preco">R$ 107,99</p>
+
+                <div class="botoes">
+                    <button class="prod-comprar">Comprar</button>
+                    <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                </div>
+            </article>
+
+            <!--Produto 3-->
+            <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                <img class="prod-img" src="imagens/higiene/gato/higiene-g-lenco.jpg">
+                <header>
+                    <h3 class="prod-nome">Toalha Umedecida para Gatos</h3>
+                </header>
+
+                <div class="prod-descricao">
+                    <ul type="square">
+                        <li>Indicada para gatos</li>
+                        <li>Ideal para limpeza das orelhas, patas, pelos e região externa de olhos e focinho</li>
+                        <li>Você pode limpar partes pontuais do seu gato e objetos usados por ele sem preocupações</li>
+                        <li>Disponível em embalagem com 50 unidades</li>
+                    </ul>
+                </div>
+
+                <p class="prod-preco">R$ 23,99</p>
+
+                <div class="botoes">
+                    <button class="prod-comprar">Comprar</button>
+                    <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                </div>
+            </article>
+
+            <!--Produto 4-->
+        <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+            <img class="prod-img" src="imagens/saude/gato/saude-g-colirio.jpg">
+            <header>
+                <h3 class="prod-nome">Colírio Soft para Gatos </h3>
+            </header>
+
+            <div class="prod-descricao">
+                <ul type="square">
+                    <li>Lágrima artificial elástica estéril</li>
+                    <li>Conforto imediato e alívio prolongado</li>
+                    <li>Favorece a recuperação ocular de animais com comprometimento da produção lacrimal</li>
+                    <li>Disponível em embalagem com 10 ml</li>
+                </ul>
+            </div>
+
+            <p class="prod-preco">R$ 92,99</p>
+
+            <div class="botoes">
+                <button class="prod-comprar">Comprar</button>
+                <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+            </div>
+        </article>
+            </div>
+        <nav>
+            <!--Ver Mais-->
+        </nav>
+    </section>
+      <!--FIM Novidades Felinas-->
+    
+      <!--Novidades Caninas--> 
+
+    <!--Produto 1-->
+    <section class="secao-nov">
+        <header>
+            <h2 class="titulo">Novidades Caninas</h2>
+        </header>
+        
+            <!--Colocar produtos-->
+        <div class="container-prod">
+            <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                <img class="prod-img" src="imagens/alimentacao/cao/racao-c-cookie.jpg">
+                <header>
+                    <h3 class="prod-nome">Biscoito para Cães Filhotes Porte Médio e Grande Sabor Frango</h3>
+                </header>
+
+                <div class="prod-descricao">
+                    <ul type="square">
+                        <li>Saúde Intestinal</li>
+                        <li>Sem adição de açúcar</li>
+                        <li>Sem ingredientes transgênicos</li>
+                        <li>Sem corantes e aromatizantes artificiais</li>
+                    </ul>
+                </div>
+
+                <p class="prod-preco">R$ 16,99</p>
+
+                <div class="botoes">
+                    <button class="prod-comprar">Comprar</button>
+                    <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                </div>
+            </article>
+        </article>
+
+        <!--Produto 2-->
+        <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+            <img class="prod-img" src="imagens/lazer/cao/lazer-c-futebol-americano.jpg">
+            <header>
+                <h3 class="prod-nome">Mordedor Espinhos Roxo para Cães</h3>
+            </header>
+
+            <div class="prod-descricao">
+                <ul type="square">
+                    <li>Mordedor Kroco Espinhos Roxo para Cães</li>
+                    <li>Ideal para brincadeiras de morder</li>
+                    <li>Estimula a brincadeira, curiosidade e raciocínio para seu pet ficar entretido por horas!</li>
+                    <li>Produto fabricado com plástico</li>
+                </ul>
+            </div>
+
+            <p class="prod-preco">R$ 38,99</p>
+
+            <div class="botoes">
+                <button class="prod-comprar">Comprar</button>
+                <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+            </div>
+        </article>
+
+        
+
+        <!--Produto 3-->
+        <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+            <img class="prod-img" src="imagens/higiene/cao/higiene-c-tapete.jpg">
+            <header>
+                <h3 class="prod-nome">Tapete Higiênico para Cães</h3>
+            </header>
+
+            <div class="prod-descricao">
+                <ul type="square">
+                    <li>Possui abas Laterais, além de adesivo no tapete</li>
+                    <li>Contém vedação especial e gel absorvente, resistente a ranhuras</li>
+                    <li>Agora com delicioso cheirinho de frutas cítricas e atrativo canino</li>
+                    <li>Contém 30 unidades</li>
+                </ul>
+            </div>
+
+            <p class="prod-preco">R$ 96,99</p>
+
+            <div class="botoes">
+                <button class="prod-comprar">Comprar</button>
+                <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+            </div>
+        </article>
+
+        <!--Produto 4-->
+        <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+            <img class="prod-img" src="imagens/saude/cao/saude-c-suplemento-omeca.jpg">
+            <header>
+                <h3 class="prod-nome">Suplemento Ômega 3 Sabor Carne para Cães</h3>
+            </header>
+
+            <div class="prod-descricao">
+                <ul type="square">
+                    <li>Fonte de ácidos graxos poli-insaturados</li>
+                    <li>Transporta oxigênio para o organismo</li>
+                    <li>Melhora o funcionamento dos órgãos vitais e articulações; - Dá brilho n pelagem e evita queda de pelos</li>
+                    <li>Disponível em embalagem de 1620 mg</li>
+                </ul>
+            </div>
+
+            <p class="prod-preco">R$ 69,99</p>
+
+            <div class="botoes">
+                <button class="prod-comprar">Comprar</button>
+                <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+            </div>
+        </article>
+        </div>
+        
+        <nav>
+            <!--Ver Mais-->
+        </nav>
+    </section>
+    <!--Fim Novidades-->
+    
+    <!--Cadastro recebe-email-->
+    <section class="cad-oferta">
+        <header>
+            <h2>Não perca as melhores ofertas para o seu Pet!</h2>
+            <p>Cadastre-se e fique por dentro de ofertas imperdíveis para o seu bichinho.</p>
+        </header>
+        <article>
+            <form>
+                <div class="bloco-cad">
+                    <p>Email:</p>
+                    <input type="text" placeholder="paidepet@email.com" required>
+                </div>
+
+                <div class="bloco-cad">
+                    <p>Qual o seu Pet?</p>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gachorro">Gato e Cachorro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
+
+    <div class="espaco-final"></div>
+    <!--Fim cadastro recebe-email-->
+
+    <!--Rodapé-->
+    <footer class="rodape-pag">
+        <div class="rodape-infos">
+            <div class="bloco-infos">
+                <h4>Institucional</h4>
+                <p>Trabalhe Conosco</p>
+                <p>Sobre nós</p>
+            </div>
+          
+            <div class="bloco-infos">
+                <h4>Fale Conosco</h4>
+                <p>Central de Atendimento | (21)2000-0000</p>
+                <p>WhatsApp | (21)99999-9999</p>
+            </div>
+    
+            <div class="bloco-infos">
+                <h4>Nossas redes:</h4>
+                
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      
+        <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+    
+</html>

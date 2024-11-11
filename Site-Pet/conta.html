@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Radicais | Entrar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-pag" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-pag" href="saude.html">Saúde</a></li>
+                    <li><a class="secao-pag" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-pag" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+
+    <div class="espaco-inicial"></div>
+    
+        <!--Entrar-->
+            <div id="login">
+                <div class="caixa">
+
+                    <h2>Entrar</h2>
+                <form action="conta.html" method="POST">
+                    <div class="email conta">
+                        <label for="iemail">Email</label>
+                        <input type="email" placeholder="paidepet@email.com" id="iemail" required>
+                    </div>
+
+                    <div class="senha conta">
+                        <label for="isenha">Senha</label>
+                        <input type="password" placeholder="Senha" id="isenha" required>
+                    </div>
+
+                    <div class="entrar">
+                        <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+                </div>
+            </div>
+        <!--Fim Entrar-->
+
+        <div class="espaco-final"></div>
+    
+        <!--Rodapé-->
+        <footer class="rodape-pag">
+            <div class="rodape-infos">
+                <div class="bloco-infos">
+                    <h4>Institucional</h4>
+                    <p>Trabalhe Conosco</p>
+                    <p>Sobre nós</p>
+                </div>
+
+                <div class="bloco-infos">
+                    <h4>Fale Conosco</h4>
+                    <p>Central de Atendimento | (21)2000-0000</p>
+                    <p>WhatsApp | (21)99999-9999</p>
+                </div>
+
+                <div class="bloco-infos">
+                    <h4>Nossas redes:</h4>
+
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                            <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                            <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                            <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+        </footer>
+        <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+</html>

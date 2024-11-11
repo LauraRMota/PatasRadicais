@@ -1,0 +1,1219 @@
+body {
+  position: relative;
+  margin: 0;
+  font-family: verdana;
+}
+
+/*Espaçamento: Header -> Body*/
+.espaco-inicial {
+  height: 172px;
+}
+
+/*-------------Cabeçalho-------------*/
+
+.cabeca {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/*Cabeçalho Laranja*/
+.cabecalho1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff7f5f;
+  height: 40px;
+  padding: 20px 50px;
+}
+
+.pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: auto;
+  margin-left: 20px;
+}
+
+.pesquisa input {
+  border-radius: 10px;
+  border: 2px solid #4fbaaa;
+  height: 30px;
+  width: 500px;
+}
+
+.pesquisa input[type="text"]:focus {
+  outline-color: #D1C9BA;
+}
+
+.pesquisa button {
+  border-radius: 10px;
+  border: 0px;
+  padding: 8px;
+  padding-right: 11px;
+  padding-left: 11px;
+  background-color: #4fbaaa;
+  color: #2a655c;
+  cursor: pointer;
+}
+
+.pesquisa button:hover {
+  transition: 0.3s ease;
+  background-color: #ffffff;
+  color: #2a655c;
+  ;
+}
+
+.pesquisa button img {
+  width: 15px;
+  padding-top: 2.5px;
+}
+
+.secoes-icone {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 22px;
+  margin-right: -10px;
+}
+
+.card-sIcone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70px;
+  margin: 0;
+}
+
+.card-sIcone a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px #4fbaaa;
+}
+
+.card-sIcone a:hover {
+  color: #4fbaaa;
+  text-shadow: 1px 1px #2a655c;
+}
+
+.card-sIcone img {
+  width: 90px;
+  max-height: 90px;
+  margin-bottom: -24px;
+}
+
+img#logomarca {
+  width: 210px;
+  padding-left: 100px;
+  padding-bottom: 6px;
+}
+
+/*Cabeçalho Bege*/
+.cabecalho2 {
+  background-color: #D1C9BA;
+  height: 32px;
+  font-size: 13px;
+  font-family: lucida sans;
+  box-shadow: 2px 2px #bdbdbd;
+}
+
+.cabecalho2 ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho2 li {
+  justify-content: center;
+  text-align: center;
+  margin: 10px 20px;
+  font-weight: bold;
+}
+
+.secao-pag {
+  text-decoration: none;
+  color: #302f2c;
+  background-color: #c4bbab;
+  padding: 5px 50px;
+  border-radius: 10px;
+}
+
+.cabecalho2 a:hover {
+  transition: 0.3s ease;
+  background-color: #ffffff;
+}
+
+.secao-atual {
+  text-decoration: none;
+  color: #2a655c;
+  background-color: #4fbaaa;
+  padding: 5px 50px;
+  border-radius: 10px;
+}
+
+/*-------------Fim cabeçalho-------------*/
+
+/*Carrossel*/
+.slider {
+  width: 1300px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+
+.slide img {
+  width: 1300px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 1300px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:Last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked~.frete {
+  margin-left: 0;
+}
+
+#radio2:checked~.frete {
+  margin-left: -25%;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background-color: white;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background-color: white;
+}
+
+.navigation-auto div {
+  border: 2px solid #4fbaaa;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 1300px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+/*Card-Geral: Animação*/
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Inicial: Produtos por Pet*/
+.prod-pet {
+  text-align: center;
+}
+
+.prod-pet h2 {
+  color: #4fbaaa;
+  text-shadow: 1px 1px #2a655c;
+  margin-top: 100px;
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+
+.card-pet {
+  flex-direction: column;
+  align-items: center;
+  background-color: #edeae3;
+  padding: 10px;
+  border-radius: 120px;
+  max-width: 300px;
+  width: 200px;
+  height: 200px;
+}
+
+.pet-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.img-pet {
+  border-radius: 120px;
+  width: 100%;
+  height: auto;
+}
+
+/*Cabeçalho das Seções*/
+.cabeca-secao {
+  text-align: center;
+  margin-bottom: -25px;
+  margin-top: -30px;
+}
+
+.cabeca-secao p {
+  margin-top: -15px;
+}
+
+/*Títulos da Pág*/
+.titulo-pag {
+  color: #d8735a;
+  font-size: 40px;
+}
+
+.titulo {
+  color: #4fbaaa;
+  text-shadow: 1px 1px #2a655c;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+/*Container de Produtos*/
+.container-prod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*Card: Produto*/
+.produto {
+  display: flex;
+  flex-direction: column;
+  border: 1px 1px solid black;
+  background-color: #edeae3;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: -5px;
+  padding-right: -5px;
+  border-radius: 10px;
+  width: 20%;
+}
+input#prod-qtd{
+  width: 40px;
+}
+
+.prod-img{
+  background-color: #D1C9BA;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.prod-nome{
+  text-align: center;
+  margin: 15px;
+  font-size: 14px;
+  color: #2a655c;
+}
+
+.prod-descricao{
+  margin-top: -10px;
+  margin-bottom: -5px;
+  font-size: 12px;
+  font-family: lucida sans;
+  color: #302f2c;
+}
+
+.prod-preco{
+  margin-bottom: 15px;
+  color: #d8735a;
+  font-size: 13px;
+  font-family: lucida sans;
+  font-weight: bold;
+}
+
+.prod-comprar{
+  padding: 7px 47px;
+  font-family: lucida sans;
+  font-weight: bold;
+  border: none;
+  background-color: #2a655c;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button#prod-addcarrinho{
+  padding: 5px 12px;
+  font-family: lucida sans;
+  font-weight: bold;
+  border: none;
+  background-color: #2a655c;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+button#prod-addcarrinho img{
+  width: 16px;
+}
+
+.prod-addcarrinho{
+  padding: 5px 12px;
+  font-family: lucida sans;
+  font-weight: bold;
+  border: none;
+  background-color: #2a655c;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.prod-addcarrinho img{
+  width: 16px;
+}
+
+.botoes button:hover{
+  background-color: #4fbaaa;
+  color: white;
+}
+.botoes{
+  display: flex;
+  gap: 3px;
+  flex-direction: flex-end;
+}
+
+/*Cadastro: Oferta*/
+
+.cad-oferta {
+  margin-top: 100px;
+  background-color: #d8735a;
+  padding: 15px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #302f2c;
+  width: calc(100% - 30px);
+}
+
+.cad-oferta h2 {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px #302f2c;
+}
+
+.cad-oferta p {
+  font-family: lucida sans;
+}
+
+.cad-oferta form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 20px;
+}
+
+.bloco-cad {
+  flex-direction: column;
+  text-align: left;
+  background-color: #D1C9BA;
+  padding: 15px;
+  padding-top: 3px;
+  border-radius: 15px;
+}
+
+.cad-oferta button {
+  border-radius: 10px;
+  border: 0px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #D1C9BA;
+  color: #302f2c;
+  cursor: pointer;
+}
+
+.cad-oferta button:hover {
+  transition: 0.3s ease;
+  background-color: #ffffff;
+  color: #302f2c;
+}
+
+/*Espaçamento: Body -> Footer*/
+.espaco-final {
+  height: 165px;
+}
+
+/*Rodapé*/
+footer {
+  position: absolute;
+  background-color: #4fbaaa;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  font-size: 12px;
+}
+
+.bloco-infos {
+  flex-direction: column;
+  text-align: justified;
+}
+
+.bloco-infos ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.redes-sociais {
+  width: 20px;
+  height: 20px;
+}
+
+.direitos {
+  text-align: center;
+  padding: 0;
+}
+
+.rodape-infos {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*-------------Conta Entrar--------------*/
+
+.entrar a {
+  text-decoration: none;
+  color: #2d6960;
+}
+
+#login {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.email input {
+  border-radius: 15px;
+  border: none;
+  width: 250px;
+  height: 40px;
+  padding-left: 15px;
+  background-color: #83c3ba;
+  color: white;
+}
+
+.senha input {
+  border-radius: 15px;
+  border: none;
+  width: 250px;
+  height: 40px;
+  padding-left: 15px;
+  background-color: #83c3ba;
+  color: white;
+  margin-top: 15px;
+}
+
+.entrar input {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  color: #357e73;
+}
+
+.entrar:hover input {
+  background-color: #357e73;
+  color: #83c3ba;
+}
+
+.conta input::placeholder {
+  color: #c1e6e2;
+}
+
+.caixa {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #4fbaaa;
+  color: white;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.conta input {
+  outline: none;
+}
+
+/*-------------Conta Cadastrar--------------*/
+.nome input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #83c3ba;
+    color: white;
+    margin-bottom: 15px ;
+}
+
+/*-------------Favoritos e carrinho-------------*/
+.titulo-secoes{
+  color: #4fbaaa;
+  text-shadow: 1px 1px #357e73;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+
+/*-------------------RESPONSIVIDADE-------------------*/
+
+@media screen and (max-width: 768px){
+  body {
+    position: relative;
+    margin: 0;
+    font-family: verdana;
+  }
+
+  /*Espaçamento: Header -> Body*/
+  .espaco-inicial {
+    height: 172px;
+  }
+
+  /*-------------Cabeçalho-------------*/
+
+  .cabeca {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  /*Cabeçalho Laranja*/
+  .cabecalho1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7f5f;
+    height: 40px;
+    padding: 20px 50px;
+  }
+
+  .pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: auto;
+    margin-left: 20px;
+  }
+
+  .pesquisa input {
+    border-radius: 10px;
+    border: 2px solid #4fbaaa;
+    height: 30px;
+    width: 500px;
+  }
+
+  .pesquisa input[type="text"]:focus {
+    outline-color: #D1C9BA;
+  }
+
+  .pesquisa button {
+    border-radius: 10px;
+    border: 0px;
+    padding: 8px;
+    padding-right: 11px;
+    padding-left: 11px;
+    background-color: #4fbaaa;
+    color: #2a655c;
+    cursor: pointer;
+  }
+
+  .pesquisa button:hover {
+    transition: 0.3s ease;
+    background-color: #ffffff;
+    color: #2a655c;
+    ;
+  }
+
+  .pesquisa button img {
+    width: 15px;
+    padding-top: 2.5px;
+  }
+
+  .secoes-icone {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 22px;
+    margin-right:20px;
+  }
+
+  .card-sIcone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70px;
+    margin: 0;
+  }
+
+  .card-sIcone a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #4fbaaa;
+  }
+
+  .card-sIcone a:hover {
+    color: #4fbaaa;
+    text-shadow: 1px 1px #2a655c;
+  }
+
+  .card-sIcone img {
+    width: 90px;
+    max-height: 90px;
+    margin-bottom: -24px;
+  }
+
+  img#logomarca {
+    width: 210px;
+    padding-left: 100px;
+    padding-bottom: 6px;
+  }
+
+  /*Cabeçalho Bege*/
+  .cabecalho2 {
+    background-color: #D1C9BA;
+    height: 32px;
+    font-size: 13px;
+    font-family: lucida sans;
+    box-shadow: 2px 2px #bdbdbd;
+  }
+
+  .cabecalho2 ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cabecalho2 li {
+    justify-content: center;
+    text-align: center;
+    margin: 10px 20px;
+    font-weight: bold;
+  }
+
+  .secao-pag {
+    text-decoration: none;
+    color: #302f2c;
+    background-color: #c4bbab;
+    padding: 5px 50px;
+    border-radius: 10px;
+  }
+
+  .cabecalho2 a:hover {
+    transition: 0.3s ease;
+    background-color: #ffffff;
+  }
+
+  .secao-atual {
+    text-decoration: none;
+    color: #2a655c;
+    background-color: #4fbaaa;
+    padding: 5px 50px;
+    border-radius: 10px;
+  }
+
+  /*-------------Fim cabeçalho-------------*/
+
+  /*Carrossel*/
+  .slider {
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+
+  .slides input {
+    display: none;
+  }
+
+  .slide {
+    width: 25%;
+    position: relative;
+  }
+
+  .slide img {
+    width: 500px;
+  }
+
+  .manual-navigation {
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:Last-child) {
+    margin-right: 10px;
+  }
+
+  .manual-btn:hover {
+    background-color: white;
+  }
+
+  #radio1:checked~.frete {
+    margin-left: 0;
+  }
+
+  #radio2:checked~.frete {
+    margin-left: -25%;
+  }
+
+  #radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: white;
+  }
+
+  #radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: white;
+  }
+
+  .navigation-auto div {
+    border: 2px solid #4fbaaa;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .navigation-auto {
+    position: absolute;
+    width: 1300px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  /*Card-Geral: Animação*/
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /*Inicial: Produtos por Pet*/
+  .prod-pet {
+    text-align: center;
+  }
+
+  .prod-pet h2 {
+    color: #4fbaaa;
+    text-shadow: 1px 1px #2a655c;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    font-size: 25px;
+  }
+
+  .card-pet {
+    flex-direction: column;
+    align-items: center;
+    background-color: #edeae3;
+    padding: 10px;
+    border-radius: 120px;
+    max-width: 300px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .pet-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+
+  .img-pet {
+    border-radius: 120px;
+    width: 100%;
+    height: auto;
+  }
+
+  /*Cabeçalho das Seções*/
+  .cabeca-secao {
+    text-align: center;
+    margin-bottom: -25px;
+    margin-top: -30px;
+  }
+
+  .cabeca-secao p {
+    margin-top: -15px;
+  }
+
+  /*Títulos da Pág*/
+  .titulo-pag {
+    color: #d8735a;
+    font-size: 40px;
+  }
+
+  .titulo {
+    color: #4fbaaa;
+    text-shadow: 1px 1px #2a655c;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  /*Container de Produtos*/
+  .container-prod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  /*Card: Produto*/
+  .produto {
+    display: flex;
+    flex-direction: column;
+    border: 1px 1px solid black;
+    background-color: #edeae3;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: -5px;
+    padding-right: -5px;
+    border-radius: 10px;
+    width: 20%;
+  }
+  input#prod-qtd{
+    width: 40px;
+  }
+
+  .prod-img{
+    background-color: #D1C9BA;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .prod-nome{
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+    color: #2a655c;
+  }
+
+  .prod-descricao{
+    margin-top: -10px;
+    margin-bottom: -5px;
+    font-size: 12px;
+    font-family: lucida sans;
+    color: #302f2c;
+  }
+
+  .prod-preco{
+    margin-bottom: 15px;
+    color: #d8735a;
+    font-size: 13px;
+    font-family: lucida sans;
+    font-weight: bold;
+  }
+
+  .prod-comprar{
+    padding: 7px 47px;
+    font-family: lucida sans;
+    font-weight: bold;
+    border: none;
+    background-color: #2a655c;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  .prod-addcarrinho{
+    padding: 5px 12px;
+    font-family: lucida sans;
+    font-weight: bold;
+    border: none;
+    background-color: #2a655c;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .prod-addcarrinho img{
+    width: 16px;
+  }
+
+  .botoes button:hover{
+    background-color: #4fbaaa;
+    color: white;
+  }
+  .botoes{
+    display: flex;
+    gap: 3px;
+  }
+
+  /*Cadastro: Oferta*/
+
+  .cad-oferta {
+    margin-top: 100px;
+    background-color: #d8735a;
+    padding: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #302f2c;
+    width: calc(100% - 30px);
+  }
+
+  .cad-oferta h2 {
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px #302f2c;
+  }
+
+  .cad-oferta p {
+    font-family: lucida sans;
+  }
+
+  .cad-oferta form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 20px;
+  }
+
+  .bloco-cad {
+    flex-direction: column;
+    text-align: left;
+    background-color: #D1C9BA;
+    padding: 15px;
+    padding-top: 3px;
+    border-radius: 15px;
+  }
+
+  .cad-oferta button {
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #D1C9BA;
+    color: #302f2c;
+    cursor: pointer;
+  }
+
+  .cad-oferta button:hover {
+    transition: 0.3s ease;
+    background-color: #ffffff;
+    color: #302f2c;
+  }
+
+  /*Espaçamento: Body -> Footer*/
+  .espaco-final {
+    height: 165px;
+  }
+
+  /*Rodapé*/
+  footer {
+    position: absolute;
+    background-color: #4fbaaa;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    font-size: 12px;
+  }
+
+  .bloco-infos {
+    flex-direction: column;
+    text-align: justified;
+  }
+
+  .bloco-infos ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .redes-sociais {
+    width: 20px;
+    height: 20px;
+  }
+
+  .direitos {
+    text-align: center;
+    padding: 0;
+  }
+
+  .rodape-infos {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  /*-------------Conta Entrar--------------*/
+
+  .entrar a {
+    text-decoration: none;
+    color: #2d6960;
+  }
+
+  #login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+
+  .email input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #83c3ba;
+    color: white;
+  }
+
+  .senha input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #83c3ba;
+    color: white;
+    margin-top: 15px;
+  }
+
+  .entrar input {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    color: #357e73;
+  }
+
+  .entrar:hover input {
+    background-color: #357e73;
+    color: #83c3ba;
+  }
+
+  .conta input::placeholder {
+    color: #c1e6e2;
+  }
+
+  .caixa {
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #4fbaaa;
+    color: white;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  .conta input {
+    outline: none;
+  }
+
+  /*-------------Conta Cadastrar--------------*/
+  .nome input{
+      border-radius: 15px;
+      border: none;
+      width: 250px;
+      height: 40px;
+      padding-left: 15px;
+      background-color: #83c3ba;
+      color: white;
+      margin-bottom: 15px ;
+  }
+
+  /*-------------Favoritos e carrinho-------------*/
+  .titulo-secoes{
+    color: #4fbaaa;
+    text-shadow: 1px 1px #357e73;
+    font-size: 25px;
+    margin-left: 30px;
+  }
+}

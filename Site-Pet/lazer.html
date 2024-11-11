@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Radicais | Lazer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-pag" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-pag" href="saude.html">Saúde</a></li>
+                    <li><a class="secao-pag" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-atual" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+
+    <div class="espaco-inicial"></div>
+
+    <!--Lazer-->
+    <div class="cabeca-secao">
+        <h2 class="titulo-pag">Lazer</h2>
+        <p>Tudo que o seu <b>pet</b> precisa para aquele momento de diversão!</p>
+    </div>
+
+    <!--Lazer Gato-->
+        <section>
+            <header>
+                <h2 class="titulo">Diversão do seu gatinho</h2>
+            </header>
+
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/gato/lazer-g-arranhador.jpg">
+                    <header>
+                        <h3 class="prod-nome">Poste Arranhador para Gatos </h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Madeira de excelente qualidadel</li>
+                            <li>Encapado com pelúcia</li>
+                            <li>Ideal para distrair, interagir, brincar, arranhar e combater o stress do seu felino</li>
+                            <li>Proporciona o desgaste natural das garras do gato</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 99,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/gato/lazer-g-gatorama.jpg">
+                    <header>
+                        <h3 class="prod-nome">Gatorama Furacão Pet para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Indicado para gatos</li>
+                            <li>Ótimo para distração e acaba com o estresse do seu pet</li>
+                            <li>Proporciona muita diversão</li>
+                            <li>Disponível em embalagem com 1 caixa, 1 obstáculo e 2 bolinhas</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 44,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/gato/lazer-g-torre.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Torre Bolinhas para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Produto exclusivo para animais domésticos</li>
+                            <li>Proporciona diversão ao seu gato</li>
+                            <li>Possui três bolinhas na parte interna do brinquedo que estimulam o instinto de caça promovendo exercícios para seu gato</li>
+                            <li>Disponível em embalagem com uma unidade</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 107,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/gato/lazer-g-plumas.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Plumas e Penas para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Alivia o estresse do pet</li>
+                            <li>Estimula o exercício físico</li>
+                            <li>Diminui o nível de ociosidade</li>
+                            <li>Disponível em embalagem com 1 unidade</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 18,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/gato/lazer-g-laser.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Laser para Gatos </h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Estimula, desestressa e entretém seu pet</li>
+                            <li>Desenvolve seu instinto natural de caça</li>
+                            <li>Interage com o dono no momento da brincadeira</li>
+                            <li>Disponível em embalagem com uma unidade</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 28,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/gato/lazer-g-ratos.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Ratinhos para Gatos</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Provoque seu gatinho para brincar com estes ratinhos que são pura diversão</li>
+                            <li>Feitos de tecido de algodão</li>
+                            <li>São ideais para seu melhor amigo que precisa diariamente de uma boa dose de entretenimento</li>
+                            <li>Embalagem em 1 unidade</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 18,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim lazer gato-->
+
+    <!--Lazer Cão-->
+        <section class="alimentacao-cao">
+            <h2 class="titulo">Diversão do seu Cãozinho</h2>
+
+            <div class="container-prod">
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/cao/lazer-c-bolinha.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Bola Espinho Vermelha para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li> Indicado para mordidas regulares, com superfície totalmente texturizada</li>
+                            <li>Atóxico não prejudica a saúde do pet e com um formato divertido</li>
+                            <li>Resistente e totalmente flexível, de alta qualidade e durabilidade</li>
+                            <li>Incentiva atividade física, indicado para cães de todos os portes</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 19,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/cao/lazer-c-corda.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Bola de Corda com Alça para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Promove cuidados com os dentes</li>
+                            <li>Suporta fortes impactos e puxões</li>
+                            <li>Fabricado com material de qualidade, que não machuca a boca do pet</li>
+                            <li>Ajuda na coordenação motora e no desenvolvimento físico e psicológico</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 45,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/cao/lazer-c-cenoura.jpg">
+                    <header>
+                        <h3 class="prod-nome">Brinquedo Cenoura Nylon para Cães
+</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Resistente, previne comportamentos destrutivos de objetos e incentiva a atividade física</li>
+                            <li> Indicado para mordidas regulares, auxilia no fortalecimento dos músculos da mandíbula e melhora a saúde bucal</li>
+                            <li>Atóxico não prejudica a saúde, possui superfície texturizada e cores chamativas, além de aliviar o estresse e a ociosidade</li>
+                            <li>É fácil de segurar, possibilitando atividade estimulante, entretenimento, além de satisfazer o desejo de roer e mastiga</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 74,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/cao/lazer-c-futebol-americano.jpg">
+                    <header>
+                        <h3 class="prod-nome">Mordedor Espinhos Roxo para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Mordedor Kroco Espinhos Roxo para Cães</li>
+                            <li>Ideal para brincadeiras de morder</li>
+                            <li>Estimula a brincadeira, curiosidade e raciocínio para seu pet ficar entretido por horas!</li>
+                            <li>Produto fabricado com plástico</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 38,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/cao/lazer-c-peitoril-azul.jpg">
+                    <header>
+                        <h3 class="prod-nome">Peitoral Degradê Tons Azul para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Design exclusivo e fácil de ajustar no pescoço do seu pet</li>
+                            <li>Com fita macia para o conforto do seu cachorro e sistema de fechamento com 4 travas seguras para maior tranquilidade</li>
+                            <li>Garanta um passeio seguro e confortável para o seu melhor amigo</li>
+                            <li>Sistema de fechamento com 4 travas seguras para maior tranquilidade</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 149,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+
+                <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <img class="prod-img" src="imagens/lazer/cao/lazer-c-peitoril-rosa.jpg">
+                    <header>
+                        <h3 class="prod-nome">Peitoral Tons Rosa para Cães</h3>
+                    </header>
+
+                    <div class="prod-descricao">
+                        <ul type="square">
+                            <li>Design exclusivo e fácil de ajustar no pescoço do seu pet</li>
+                            <li>Com fita macia para o conforto do seu cachorro e sistema de fechamento com 4 travas seguras para maior tranquilidade</li>
+                            <li>Garanta um passeio seguro e confortável para o seu melhor amigo</li>
+                            <li>Sistema de fechamento com 4 travas seguras para maior tranquilidade</li>
+                        </ul>
+                    </div>
+
+                    <p class="prod-preco">R$ 85,99</p>
+
+                    <div class="botoes">
+                        <button class="prod-comprar">Comprar</button>
+                        <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!--Fim lazer cão-->
+    
+    <!--Fim lazer-->
+
+    <!--Cadastro recebe-email-->
+    <section class="cad-oferta">
+        <header>
+            <h2>Não perca as melhores ofertas para o seu Pet!</h2>
+            <p>Cadastre-se e fique por dentro de ofertas imperdíveis para o seu bichinho.</p>
+        </header>
+        <article>
+            <form>
+                <div class="bloco-cad">
+                    <p>Email:</p>
+                    <input type="text" placeholder="paidepet@email.com" required>
+                </div>
+
+                <div class="bloco-cad">
+                    <p>Qual o seu Pet?</p>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gachorro">Gato e Cachorro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
+
+    <div class="espaco-final"></div>
+    <!--Fim cadastro recebe-email-->
+
+    <!--Rodapé-->
+    <footer class="rodape-pag">
+        <div class="rodape-infos">
+            <div class="bloco-infos">
+                <h4>Institucional</h4>
+                <p>Trabalhe Conosco</p>
+                <p>Sobre nós</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Fale Conosco</h4>
+                <p>Central de Atendimento | (21)2000-0000</p>
+                <p>WhatsApp | (21)99999-9999</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Nossas redes:</h4>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+
+</html>

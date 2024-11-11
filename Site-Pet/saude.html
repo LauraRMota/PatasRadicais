@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Radicais | Saúde</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.ico">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="cabeca">
+        <div class="cabecalho1">
+            <!--Colocar "h1" com o nome da loja-->
+            <a href="index.html"><img src="/imagens/logomarca.png" id="logomarca"></a>
+
+            <nav class="pesquisa">
+                 <input type="text" placeholder="Do que você precisa?">
+                 <button><img src="imagens/lupa.png" id="lupa-pesquisar"></button>
+            </nav>
+
+            <nav>
+                <ul class="secoes-icone">
+                    <li class="card-sIcone">
+                        <a href="conta.html"><img src="/imagens/conta.png">Conta</a>
+                    </li>
+                    <li class="card-sIcone favoritos">
+                        <a href="#"><img src="/imagens/favoritos.png">Favoritos</a>
+                    </li>
+                    <li class="card-sIcone carrinho">
+                        <a href="#"><img src="imagens/carrinho.png">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho2">
+            <nav>
+                <ul>
+                    <li><a class="secao-pag" href="alimentacao.html">Alimentação</a></li>
+                    <li><a class="secao-atual"  href="saude.html">Saúde</a></li>
+                    <li><a class="secao-pag" href="higiene.html">Higiene</a></li>
+                    <li><a class="secao-pag" href="lazer.html">Lazer</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <!--Fim cabeçalho-->
+
+    <div class="espaco-inicial"></div>
+
+    <!--Saude-->
+    <div class="cabeca-secao">
+        <h2 class="titulo-pag">Saúde</h2>
+        <p>Tudo para o bem-estar do seu<b> pet</b>!</p>
+    </div>
+
+    <!--Saude Gato-->
+            <section>
+                <header>
+                    <h2 class="titulo">Saúde do seu Gatinho</h2>
+                </header>
+
+                <div class="container-prod">
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/gato/saude-g-antinflamatorio.jpg">
+                        <header>
+                            <h3 class="prod-nome">Antinflamatório para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Possui propriedades anti-inflamatórias, antipirética e analgésica</li>
+                                <li>Palatável e de fácil administração</li>
+                                <li>Pode ser utilizado em cães e gatos filhotes, a partir de 2 meses de idade</li>
+                                <li>Disponível em embalagem com 15 ml</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 83,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/gato/saude-g-antipulgas.jpg">
+                        <header>
+                            <h3 class="prod-nome">Antipulgas para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Para Gatos de 0,9 a 2,0kg</li>
+                                <li>Comprimido mastigável, pequeno e saboroso</li>
+                                <li>1 Comprimido protege por 1 mês inteiro</li>
+                                <li>Disponível em embalagem de 12 mg</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 75,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/gato/saude-g-colirio.jpg">
+                        <header>
+                            <h3 class="prod-nome">Colírio Soft para Gatos </h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Lágrima artificial elástica estéril</li>
+                                <li>Conforto imediato e alívio prolongado</li>
+                                <li>Favorece a recuperação ocular de animais com comprometimento da produção lacrimal</li>
+                                <li>Disponível em embalagem com 10 ml</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 92,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/gato/saude-g-rins.jpg">
+                        <header>
+                            <h3 class="prod-nome">Pró-Rim Pet para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Previne e trata doenças renais</li>
+                                <li>Pode ser usado em quadros agudos ou crônicos</li>
+                                <li>Eficaz no tratamento de nefrites e nefroses</li>
+                                <li>Disponível em embalagem de 30 ml</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 127,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/gato/saude-g-suplemento.jpg">
+                        <header>
+                            <h3 class="prod-nome">Suplemento para Gatos</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Auxilia na redução da inflamação e degradação articular</li>
+                                <li>Vitaminas C e E</li>
+                                <li>Controla rigidez, inchaço e dificuldade de locomoção</li>
+                                <li>Disponível em embalagem com 30 comprimidos</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 207,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/gato/saude-g-xarope.jpg">
+                        <header>
+                            <h3 class="prod-nome">Xarope para Gatos </h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Derivado sintético da cisteína com mecanismo mucolítico único</li>
+                                <li>Diminui viscosidade das secreções, facilitando a eliminação</li>
+                                <li>Avanço no tratamento respiratório</li>
+                                <li>Disponível em embalagem com 50 ml</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 177,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        <!--Fim Saude gato-->
+
+        <!--Saude Cão-->
+            <section class="alimentacao-cao">
+                <h2 class="titulo">Saúde do seu Cãozinho</h2>
+
+                <div class="container-prod">
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/cao/saude-c-antibiotico.jpg">
+                        <header>
+                            <h3 class="prod-nome">Antibiótico para Cães</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Indicado como preventivo de infecções no pós-operatório</li>
+                                <li>Ação contra bactérias</li>
+                                <li>Infecções dos tecidos moles,do trato urinário, respiratórias, do trato gastrointestinal, tais como as enterites</li>
+                                <li>Disponível em embalagem com 10 comprimidos</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 117,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/cao/saude-c-antipulgas.jpg">
+                        <header>
+                            <h3 class="prod-nome">Antipulgas e Carrapatos para Cães</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Para Cães de 10,1 a 25 Kg</li>
+                                <li>Proteção mensal contra pulgas e carrapatos</li>
+                                <li>Pode ser administrado com ou sem alimentos</li>
+                                <li>Disponível em embalagens com um ou três tabletes</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 118,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/cao/saude-c-suplemento-omeca.jpg">
+                        <header>
+                            <h3 class="prod-nome">Suplemento Ômega 3 Sabor Carne para Cães</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Fonte de ácidos graxos poli-insaturados</li>
+                                <li>Transporta oxigênio para o organismo</li>
+                                <li>Melhora o funcionamento dos órgãos vitais e articulações; - Dá brilho n pelagem e evita queda de pelos</li>
+                                <li>Disponível em embalagem de 1620 mg</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 69,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/cao/saude-c-suplemento.jpg">
+                        <header>
+                            <h3 class="prod-nome">Suplemento Probiótico para Cães</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Melhora a absorção de nutrientes e contribui para o equilíbrio da microbiota intestinal</li>
+                                <li>Auxilia na digestão dos alimentos e é indicado para animais debilitados e estressados</li>
+                                <li>Auxilia a colonização de bactérias benéficas</li>
+                                <li>Disponível em seringa de 14g</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 61,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/cao/saude-c-vermifugo.jpg">
+                        <header>
+                            <h3 class="prod-nome">Vermífugo para Cães</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Para Cães até 10 Kg</li>
+                                <li>Elimina todos os parasitas internos e previne contra o verme do coração</li>
+                                <li>Facilidade de administração, palatável</li>
+                                <li>Disponível em embalagens com 2 comprimidos</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 59,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+
+                    <article class="card produto" onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                        <img class="prod-img" src="imagens/saude/cao/saude-c-xarope.jpg">
+                        <header>
+                            <h3 class="prod-nome">Xarope para Cães</h3>
+                        </header>
+
+                        <div class="prod-descricao">
+                            <ul type="square">
+                                <li>Facilita a saída de secreções</li>
+                                <li>Reduze a frequência da tosse</li>
+                                <li>Torna fluido as secreções</li>
+                                <li>Disponível em embalagem de 90 ml</li>
+                            </ul>
+                        </div>
+
+                        <p class="prod-preco">R$ 54,99</p>
+
+                        <div class="botoes">
+                            <button class="prod-comprar">Comprar</button>
+                            <button class="prod-addcarrinho"><img src="imagens/produto-carrinho.png"></button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        <!--Fim saude cão-->
+    
+    <!--Fim saude-->
+
+    <!--Cadastro recebe-email-->
+    <section class="cad-oferta">
+        <header>
+            <h2>Não perca as melhores ofertas para o seu Pet!</h2>
+            <p>Cadastre-se e fique por dentro de ofertas imperdíveis para o seu bichinho.</p>
+        </header>
+        <article>
+            <form>
+                <div class="bloco-cad">
+                    <p>Email:</p>
+                    <input type="text" placeholder="paidepet@email.com" required>
+                </div>
+
+                <div class="bloco-cad">
+                    <p>Qual o seu Pet?</p>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gachorro">Gato e Cachorro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
+
+    <div class="espaco-final"></div>
+    <!--Fim cadastro recebe-email-->
+
+    <!--Rodapé-->
+    <footer class="rodape-pag">
+        <div class="rodape-infos">
+            <div class="bloco-infos">
+                <h4>Institucional</h4>
+                <p>Trabalhe Conosco</p>
+                <p>Sobre nós</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Fale Conosco</h4>
+                <p>Central de Atendimento | (21)2000-0000</p>
+                <p>WhatsApp | (21)99999-9999</p>
+            </div>
+
+            <div class="bloco-infos">
+                <h4>Nossas redes:</h4>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="imagens/instagramFooter.png" alt="instagram" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.facebook.com/?locale=pt_BR"><img src="imagens/facebookFooter.png" alt="facebook" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://www.tiktok.com/pt-BR/"><img src="imagens/tik-tokFooter.png" alt="tiktok" id="instagram" class="redes-sociais"></a></li>
+                        <li><a href="https://x.com/?lang=pt-br"><img src="imagens/twitterFooter.png" alt="twitter" id="instagram" class="redes-sociais"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <h4 class="direitos">&copy; Todos os direitos reservados a Patas Radicais 2024</h4>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="script.js"></script>
+</body>
+
+</html>
